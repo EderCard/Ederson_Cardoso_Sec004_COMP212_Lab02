@@ -67,7 +67,7 @@ namespace Ederson_Cardoso_Exercise01
 
         #region Search method
         /// <summary>
-        /// This method return an element position in an array or -1 if element is not fount
+        /// This method return an element position in an array or -1 if element is not found
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="dataArray"></param>
@@ -75,18 +75,14 @@ namespace Ederson_Cardoso_Exercise01
         /// <returns></returns>
         public static int Search<T>(T[] dataArray, T searchKey) where T : IComparable<T>
         {
-            try
-            {
-                for (int i = 0; i < dataArray.Length; i++)
-                    if (dataArray[i].CompareTo(searchKey) == 0)
-                        return i;
-                return -1;
-            }
-            catch(Exception ex)
-            {
-                Console.WriteLine("Error: " + ex.Message);
-            }
-            return -1;
+            int result = -1;
+            for (int i = 0; i < dataArray.Length; i++)
+                if (dataArray[i].CompareTo(searchKey) == 0)
+                {
+                    result = i;
+                    break;
+                }
+            return result;
         } // end Search method
         #endregion
 

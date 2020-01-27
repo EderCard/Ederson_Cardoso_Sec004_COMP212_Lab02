@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ederson_Cardoso_Exercise01"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ederson_Cardoso_Exercise02", "Ederson_Cardoso_Exercise02\Ederson_Cardoso_Exercise02.csproj", "{648FB8D3-A891-4724-BF0E-741AC26CA37D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ederson_Cardoso_Sec004_LinkedListLibrary", "Ederson_Cardoso_Sec004_LinkedListLibrary\Ederson_Cardoso_Sec004_LinkedListLibrary.csproj", "{383A8787-CFC4-4D84-8ABD-0F0DF0A9C50D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ederson_Cardoso_Sec004_LinkedListLibraryTest", "Ederson_Cardoso_Sec004_LinkedListLibraryTest\Ederson_Cardoso_Sec004_LinkedListLibraryTest.csproj", "{F7147D23-A68E-4436-AEE9-FE3D6EE48CFB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{648FB8D3-A891-4724-BF0E-741AC26CA37D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{648FB8D3-A891-4724-BF0E-741AC26CA37D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{648FB8D3-A891-4724-BF0E-741AC26CA37D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{383A8787-CFC4-4D84-8ABD-0F0DF0A9C50D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{383A8787-CFC4-4D84-8ABD-0F0DF0A9C50D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{383A8787-CFC4-4D84-8ABD-0F0DF0A9C50D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{383A8787-CFC4-4D84-8ABD-0F0DF0A9C50D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7147D23-A68E-4436-AEE9-FE3D6EE48CFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7147D23-A68E-4436-AEE9-FE3D6EE48CFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7147D23-A68E-4436-AEE9-FE3D6EE48CFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7147D23-A68E-4436-AEE9-FE3D6EE48CFB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
