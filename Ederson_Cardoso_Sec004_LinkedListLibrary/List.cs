@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ederson_Cardoso_Sec004_LinkedListLibrary
 {
-    public class List<T>
+    public class List<T> where T : IComparable<T> // add IComparable to use CompareTo()
     {
         #region LabCode
         private ListNode<T> firstNode;
@@ -155,23 +155,28 @@ namespace Ederson_Cardoso_Sec004_LinkedListLibrary
         /// This method returns the minimum node value of a linked list
         /// </summary>
         /// <returns></returns>
-        public T Minimum()
+        public T Minimum() 
         {
             if (IsEmpty())
             {
                 throw new EmptyListException(name);
             }
-
-            // Local variables to interact
-            ListNode<T> current = firstNode;
-            ListNode<T> min = current;
-
-            while (current != null)
+            // Local variables
+            T current;
+            T mininum = firstNode.Data;
+            ListNode<T> node = firstNode;
+            
+            // Get mininum value
+            while (node.Next != null)
             {
-                if (current.Data.ToString().CompareTo(min.Data.ToString()) < 0) min = current;
-                current = current.Next;
+                current = node.Data;
+                if (current.CompareTo(mininum) < 0) 
+                {
+                    mininum = current;                
+                }
+                node = node.Next;
             }
-            return min.Data;
+            return mininum;
         } // end Minimum method
         #endregion
     } // end class

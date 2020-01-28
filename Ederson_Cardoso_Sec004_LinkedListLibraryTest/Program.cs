@@ -13,6 +13,8 @@ namespace Ederson_Cardoso_Sec004_LinkedListLibraryTest
             #region integerList
             // Create a list of integers           
             var integerList = new List<int>();
+
+            // Populate values
             integerList.InsertAtBack(42);
             integerList.InsertAtBack(51);
             integerList.InsertAtBack(15);
@@ -29,13 +31,15 @@ namespace Ederson_Cardoso_Sec004_LinkedListLibraryTest
             #region doubleList
             // Create a list of doubles
             var doubleList = new List<double>();
+            
+            // Populate values
             doubleList.InsertAtBack(42.2);
             doubleList.InsertAtBack(51.1);
             doubleList.InsertAtBack(15.5);
             doubleList.InsertAtBack(33.3);
             doubleList.InsertAtBack(24.4);
             // Print a list
-            integerList.Display();
+            doubleList.Display();
 
             // Get last node value
             Console.WriteLine("Last node of double LinkedList is " + doubleList.GetLastNode());
